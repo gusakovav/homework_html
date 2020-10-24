@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление</title>
+</head>
+<body>
+    <form action="#" method="POST" enctype="multipart/form-data">
+    <div>
+        <label for="cat">Что добавляем</label>
+        <select id="cat">
+                <option>Участок</option>
+                <option>Проект дома</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="goods">Название объекта</label>
+        <input id="goods" type="text" placeholder="Название">
+    </div>
+
+    <div>
+        <label for="descr">Описание</label>
+        <textarea id="descr" placeholder="Описание" wrap="soft"></textarea>
+    </div>
+
+    <div>
+        <label for="street">Улица:</label>
+        <select id="street">
+                <option>Дачная</option>
+                <option>Новая</option>
+                <option>Лесная</option>
+                <option>1-я линия</option>
+                <option>Деревенская</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="num">Номер участка:</label>
+        <input name="num" id="num" type="number" placeholder="Номер участка" required min="1">
+    </div>
+
+    <div>
+        <label for="area">Площадь объекта:</label>
+        <input name="area" id="area" type="number" placeholder="Площадь объекта" required min="1">
+    </div>
+
+    <div>
+        <label for="price">Стоимость, руб.</label>
+        <input name="price" type="number" id="price" placeholder="Стоимость объекта" required min="1">
+    </div>
+
+    <div>
+        <label for="img">Загрузить фото объекта</label>
+        <input type="file" id="img" multiple accept="image/*">
+    </div>
+
+    <fieldset>
+        <legend>Дополнительная информация</legend>
+        <div>
+            <p>Коммуникации участка</p>
+            <label>Электричество<input type="checkbox" name="communication[]" value="gas"></label>
+            <label>Газ<input type="checkbox" name="communication[]" value="elect"></label>
+        </div>
+
+        <div>
+            <p>Доступно в ипотеку</p>
+            <label>Да<input type="radio" name="ipoteka" value="da"></label>
+            <label>Нет<input type="radio" name="ipoteka" value="net"></label>
+        </div>
+    </fieldset>
+        <div>
+            <button type="submit">Добавить</button>
+            <button type="reset">Очистить</button>
+        </div>
+    </form>
+</body>
+</html>

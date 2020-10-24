@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистраация</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+            <label for="log">Логин:</label>
+            <input name="log" id="log" type="text" placeholder="Введите логин" required minlength="2" autofocus>
+        </div>
+        <div>
+            <label for="pass">Пароль:</label>
+            <input id="pass" type="password" placeholder="Введите пароль" required minlength="8"> 
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="email" placeholder="Введите email" required minlength="2">
+        </div>
+
+        <div>
+            <label for="land">Укажите улицу:</label>
+            <select id="land">
+                    <option>Дачная</option>
+                    <option>Новая</option>
+                    <option>Лесная</option>
+                    <option>1-я линия</option>
+                    <option>Деревенская</option>
+            </select>
+        </div>
+        <div>
+            <label for="num">Укажите номер участка:</label>
+            <input name="num" id="num" type="number" placeholder="Номер участка" required min="1">
+        </div>
+        <div>
+            <label for="surname">Укажите фамилию собственника:</label>
+            <input name="surname" id="surname" type="text" placeholder="Фамилия собственника" required minlength="2">
+        </div>
+
+        <div>
+            <label for="date">Дата рождения собственника</label>
+            <input type="date" id="date">
+        </div>
+
+        <div>
+            <label>
+                Запомнить меня
+                <input type="checkbox">
+            </label>
+        </div>
+        <div>
+            <button type="submit">Зарегистрироваться</button>
+            <button type="reset">Очистить</button>
+        </div>
+    </form>
+</body>
+</html>
