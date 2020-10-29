@@ -1,6 +1,70 @@
-body {
+.page {
     background-image: url(../img/forest.jpg);
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
    }
+
+/* body {
+    position: relative;
+    z-index: 5;
+} */
+body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a {
+    /* оформление текста в виде подчерквания, перечеркивания, линии над текстом */
+    text-decoration: none;
+}
+
+.img {
+       position: absolute;
+       height: 100%;
+       width: auto;
+   }
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+header, footer {
+    height: 50px;
+}
+
+.header-color {
+    background-color: darkgreen;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu {
+    text-shadow: 10px 5px 5px darkseagreen;
+}
+
+.btn {
+    background-color: darkgreen;
+    border-color: darkgreen;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+p {
+    box-shadow: 10px 5px 5px darkseagreen;
+}
