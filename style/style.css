@@ -3,6 +3,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 100vh;
    }
 
 /* body {
@@ -11,7 +12,9 @@
 } */
 body {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 a {
@@ -43,6 +46,7 @@ footer {
 
 header, footer {
     height: 50px;
+    /* z-index: -1; */
 }
 
 .header-color {
@@ -67,4 +71,36 @@ header, footer {
 
 p {
     box-shadow: 10px 5px 5px darkseagreen;
+}
+
+.main {
+    position: relative;
+    z-index: -1;
+}
+
+.form:after {
+        content: "";
+        position: relative;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.8);
+        width: 100hv;
+        height: 100hv;
+        z-index: 1;
+}
+
+.form {
+    display: none;
+    position: absolute;
+    left: 400px;
+}
+
+#reg:target {
+    display: block;
+    width: 450px;
+    border-radius: 10px;
+    background: darkgreen;
+    padding: 40px;
 }
